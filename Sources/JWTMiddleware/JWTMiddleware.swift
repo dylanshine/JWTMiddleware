@@ -3,8 +3,8 @@ import JWT
 
 public final class JWTMiddleware<T: JWTPayload>: Middleware {
     
-//    public init() {}
-
+    public init() {}
+    
     public func respond(to request: Request, chainingTo next: Responder) -> EventLoopFuture<Response> {
         
         do {
